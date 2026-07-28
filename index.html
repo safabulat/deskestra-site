@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The page ships its own light and dark designs; stop extensions from re-inventing them. -->
+<meta name="darkreader-lock">
+<title>Deskestra — instruments in your menu bar</title>
+<meta name="description" content="A piano, a drum kit, a bass, a guitar, a kalimba, a metronome and a tuner that live in your Mac's menu bar. Free app, free piano. macOS 13+.">
+<meta property="og:title" content="Deskestra — instruments in your menu bar">
+<meta property="og:description" content="Seven instruments that float on your desktop, one click away, gone when you're done.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/appicon.png">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="wordmark" href="/">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+        <mask id="dm">
+          <rect width="100" height="100" fill="#000"/>
+          <rect x="10.5" y="36" width="11" height="24" rx="5.5" fill="#fff"/>
+          <rect x="27.5" y="22" width="11" height="38" rx="5.5" fill="#fff"/>
+          <rect x="44.5" y="8"  width="11" height="52" rx="5.5" fill="#fff"/>
+          <rect x="61.5" y="28" width="11" height="32" rx="5.5" fill="#fff"/>
+          <rect x="78.5" y="40" width="11" height="20" rx="5.5" fill="#fff"/>
+          <rect x="6" y="68" width="88" height="27" rx="4" fill="#fff"/>
+          <rect x="20.1" y="68" width="7" height="16" rx="2" fill="#000"/>
+          <rect x="37.7" y="68" width="7" height="16" rx="2" fill="#000"/>
+          <rect x="55.3" y="68" width="7" height="16" rx="2" fill="#000"/>
+          <rect x="72.9" y="68" width="7" height="16" rx="2" fill="#000"/>
+        </mask>
+        <rect width="100" height="100" fill="currentColor" mask="url(#dm)"/>
+      </svg>
+      Deskestra
+    </a>
+    <nav>
+      <a href="#instruments">Instruments</a>
+      <a href="#price">Price</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <h1>Instruments that live in your <em>menu bar</em>.</h1>
+  <p class="lede">
+    A piano, a drum kit, a bass, a guitar, a kalimba, a metronome and a tuner — floating on your
+    desktop, one click away, gone when you're done. No dock icon. No project to open. Nothing to save.
+  </p>
+  <div class="cta">
+    <a class="btn btn-primary" href="#" aria-disabled="true">Mac App Store — soon</a>
+    <a class="btn btn-ghost" href="#" aria-disabled="true">Direct download — soon</a>
+  </div>
+  <p class="cta-note">Free app, free piano · macOS 13 or later · about 2 MB</p>
+
+  <!-- TODO (site/README.md): replace this still with the hover-strum screen recording. Keep the poster
+       so the page still reads if the video fails or the visitor has autoplay off.
+  <video class="shot" autoplay loop muted playsinline poster="img/guitar-dark.png">
+    <source src="img/hover-strum.mp4" type="video/mp4">
+  </video> -->
+  <figure class="stage">
+    <picture>
+      <source srcset="img/guitar-dark.png" media="(prefers-color-scheme: dark)">
+      <img class="shot" src="img/guitar-light.png" width="920" height="522" alt="Deskestra's guitar module: two rows of chord buttons above an electric guitar you strum with the cursor.">
+    </picture>
+    <figcaption>Actual size. It sits above your work, wherever you drag it.</figcaption>
+  </figure>
+</div>
+
+<section id="strum">
+  <div class="wrap feature">
+    <div>
+      <p class="eyebrow">The party trick</p>
+      <h2>Just wave your cursor across the strings.</h2>
+      <p>
+        No click. No focus. Brush the pointer over the guitar and it strums — <strong>even when
+        Deskestra isn't the app you're working in.</strong> Pick a chord with one key, then let your
+        hand drift across the strings on the way to something else.
+      </p>
+    </div>
+    <picture>
+      <source srcset="img/guitar-dark.png" media="(prefers-color-scheme: dark)">
+      <img class="shot" src="img/guitar-light.png" width="920" height="522" alt="The guitar module, showing major chords on the top row and minor chords below.">
+    </picture>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <p class="eyebrow">Seven of them</p>
+    <h2>Every one plays from the keyboard you're already typing on.</h2>
+    <p>No MIDI controller, no setup, no sample library to download — Deskestra uses the General MIDI
+       bank macOS already ships with.</p>
+
+    <div class="grid">
+
+      <article class="card">
+        <picture>
+          <source srcset="img/piano-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/piano-light.png" width="920" height="254" alt="Two octaves of piano keys with the computer key for each printed on it.">
+        </picture>
+        <h3>Piano <span class="tag tag-free">Free</span></h3>
+        <p>Seventeen white keys with their sharps — C3 up to E5 — fully polyphonic, with an octave shift
+           that reaches from C0 to C8. Five voices, from grand to Rhodes to harpsichord.</p>
+        <p class="keys">the top row, then the whole bottom row · sharps on the row above each</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/drums-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/drums-light.png" width="920" height="400" alt="A drum kit drawn from above: drums as circles, cymbals as gold discs, each with its key letter.">
+        </picture>
+        <h3>Drums <span class="tag tag-paid">$2.99</span></h3>
+        <p>Twelve pieces in one tight cluster your hands never have to leave, with each pair stacked in a
+           column — kick above kick, the snare's two voices, the hat's two. Every piece is placed in the
+           stereo field where you can see it, so the crash on the left arrives on the left. Four kits,
+           including a TR-808.</p>
+        <p class="keys"><kbd>F</kbd><kbd>V</kbd> kick · <kbd>G</kbd> snare · <kbd>N</kbd> hi-hat · <kbd>R</kbd><kbd>T</kbd><kbd>Y</kbd> toms</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/bass-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/bass-light.png" width="920" height="288" alt="A four-string bass fretboard, one keyboard row per string.">
+        </picture>
+        <h3>Bass <span class="tag tag-paid">$2.99</span></h3>
+        <p>Four strings, open plus eight frets, and one note per string at a time — like a real one.
+           Each row of your keyboard is a string, nine keys long. Finger, pick, upright, fretless or slap.</p>
+        <p class="keys">number row = G · top row = D · home row = A · bottom row = E</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/guitar-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/guitar-light.png" width="920" height="522" alt="The guitar module with fourteen chord buttons above the instrument.">
+        </picture>
+        <h3>Guitar <span class="tag tag-paid">$2.99</span></h3>
+        <p>Fourteen chords — seven majors on the top row, seven minors below — and six strings you
+           strum by moving the mouse. Clean, jazz, steel, nylon or overdriven.</p>
+        <p class="keys"><kbd>Q</kbd>…<kbd>U</kbd> C to B major · <kbd>A</kbd>…<kbd>J</kbd> minor</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/kalimba-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/kalimba-light.png" width="920" height="396" alt="A kalimba: metal tines on a wooden board, the longest in the middle, fanning shorter towards each edge.">
+        </picture>
+        <h3>Kalimba <span class="tag tag-paid">$2.99</span></h3>
+        <p>The one for people who don't play an instrument. Fifteen tines, two octaves of plain C major,
+           so there is no wrong note to hit — brush the cursor across them and whatever comes out is
+           music. Laid out like a real one, lowest note in the middle and the scale fanning outward, with
+           the keys fanning out from the middle too. Also marimba, vibraphone, music box and glockenspiel.</p>
+        <p class="keys">two keys for the centre tine · the top row fans left, the bottom row fans right</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/metronome-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/metronome-light.png" width="920" height="532" alt="A wedge metronome with a swinging pendulum beside a large BPM readout.">
+        </picture>
+        <h3>Metronome <span class="tag tag-free">Free</span></h3>
+        <p>The click is placed sample by sample inside the audio engine, so it cannot drift — and the
+           pendulum is driven by that same clock, so it swings <em>exactly</em> on the beat rather
+           than near it. Tap tempo, 1–8 beats per bar, three click sounds.</p>
+        <p class="keys"><kbd>Space</kbd> start · <kbd>T</kbd> tap tempo · <kbd>←</kbd><kbd>→</kbd> tempo</p>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source srcset="img/tuner-dark.png" media="(prefers-color-scheme: dark)">
+          <img class="shot" src="img/tuner-light.png" width="920" height="580" alt="A chromatic tuner showing the note name, frequency in hertz and the error in cents.">
+        </picture>
+        <h3>Tuner <span class="tag tag-free">Free</span></h3>
+        <p>Chromatic, accurate to a couple of cents, with a needle that moves at 60 frames a second so
+           closing in on a string feels smooth instead of twitchy. Green in tune, orange close, red
+           off. Reference pitch anywhere from 432 to 446 Hz.</p>
+        <p class="keys">note name · hertz · cents · input level</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="desktop">
+  <div class="wrap">
+    <p class="eyebrow">A desk toy, not an app</p>
+    <h2>It stays out of the way until you want it.</h2>
+    <ul class="points">
+      <li><h3>No dock icon</h3><p>Deskestra lives in the menu bar. Click the icon to show or hide it; it never joins your app switcher.</p></li>
+      <li><h3>Always on top, if you like</h3><p>Keep it floating over your editor, or let it fall behind like any other window. Drag it anywhere by its grip.</p></li>
+      <li><h3>Plays unfocused</h3><p>You don't have to click into it first. Hover-strum the guitar while your text cursor stays exactly where it was.</p></li>
+      <li><h3>Light and dark</h3><p>Follows your system, or pin it to one. The frame is real vibrancy, so it picks up whatever is behind it.</p></li>
+      <li><h3>Any keyboard layout</h3><p>Instruments follow the physical keys, and each one shows the letter your own keyboard prints on it. Turkish Q, AZERTY and QWERTZ all play the same.</p></li>
+      <li><h3>Opens at login</h3><p>One switch. It's there every morning, taking up eighteen pixels.</p></li>
+      <li><h3>About two megabytes</h3><p>No bundled sample library. Deskestra plays the General MIDI bank macOS already has, so there is nothing to download.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="privacy-teaser">
+  <div class="wrap">
+    <p class="eyebrow">Privacy</p>
+    <h2>Deskestra collects nothing, and has no server to collect it on.</h2>
+    <p>
+      The tuner listens through your microphone <strong>only while the tuner is the instrument on
+      screen</strong> — the macOS recording indicator matches exactly what the app is doing. That audio
+      is measured for pitch and thrown away: it is never recorded, never stored, and never sent
+      anywhere. Deskestra sends nothing over the network at all — the one connection that ever happens is
+      Apple's own, when you buy or restore an instrument.
+      <a href="privacy.html">Read the privacy policy →</a>
+    </p>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <p class="eyebrow">Price</p>
+    <h2>Free to start, and free to keep using.</h2>
+    <p>The app costs nothing, and neither do the three things most people open it for.</p>
+    <div class="price">
+      <div>
+        <div class="amount">Free <small>forever</small></div>
+        <ul>
+          <li>The app itself</li>
+          <li>Piano — all five voices</li>
+          <li>Metronome</li>
+          <li>Tuner</li>
+        </ul>
+      </div>
+      <div>
+        <div class="amount">$9.99 <small>all four, once</small></div>
+        <ul>
+          <li>Drums — four kits</li>
+          <li>Bass — five voices</li>
+          <li>Guitar — five voices, hover-strum</li>
+          <li>Kalimba — five voices, no wrong notes</li>
+          <li>$2.99 each on their own, so all four together save you $1.97</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cta-note">One-time purchases. No subscription, no trial timer, nothing expires.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Questions</p>
+    <h2>Before you download it.</h2>
+    <div style="margin-top:26px">
+      <details>
+        <summary>Does it need an internet connection?</summary>
+        <p>No. Every instrument works offline, forever. The only moment a connection is needed is buying or
+           restoring an instrument, and that is handled by Apple's App Store rather than by us.</p>
+      </details>
+      <details>
+        <summary>Do I have to install any sounds?</summary>
+        <p>No. Every instrument plays the General MIDI bank that ships with macOS, which is why the app
+           is about two megabytes instead of several hundred.</p>
+      </details>
+      <details>
+        <summary>Will it slow my Mac down?</summary>
+        <p>It does essentially nothing until you play something. The tuner is the only part that works
+           continuously, and only while it's the instrument on screen.</p>
+      </details>
+      <details>
+        <summary>Can I play it while I'm working in another app?</summary>
+        <p>Yes — that's rather the point. The window doesn't steal focus, and the guitar strums on hover
+           without a click.</p>
+      </details>
+      <details>
+        <summary>Why is the piano free?</summary>
+        <p>Because a desk toy you have to pay for before you know whether you like it isn't a desk toy.
+           Play the piano, run the metronome, tune your guitar. If you want the drums too, they're $2.99.</p>
+      </details>
+      <details>
+        <summary>Is my microphone always on?</summary>
+        <p>No. Recording starts when you open the tuner and stops when you leave it. Nothing is recorded
+           or transmitted at any point — see the <a href="privacy.html">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>Does it work on my keyboard layout?</summary>
+        <p>Yes. Every instrument is mapped to physical keys rather than to letters, and the letter drawn on
+           each key, tine or drum is the one your own layout prints there — so the fingering is identical on
+           a US, Turkish, French or German keyboard.</p>
+      </details>
+      <details>
+        <summary>Which Macs does it run on?</summary>
+        <p>macOS 13 Ventura or later, on both Apple silicon and Intel.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Deskestra</span>
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:hello@deskestra.app">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
